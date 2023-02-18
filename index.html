@@ -36,8 +36,8 @@
           <!-- navbar end -->
     </header>
     <main>
-      <section>
-        <div class="geomatric-details w-[70%] bg-red-700  mt-5">
+      <section class="lg-px-12 flex flex-col md:flex-row lg:flex-row">
+        <div class="geomatric-details w-[70%] mt-5 grid md:grid-cols-2 lg:grid-cols-2 gap-6">
           <div class="card card-compact w-96 bg-base-100 shadow-xl">
             <figure><img class="" src="images/triangle.png" alt="triangle" /></figure>
             <div class="card-body">
@@ -77,9 +77,71 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="card-details">
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure><img class="mt-10" src="images/parallelogram.png" alt="rectangle" /></figure>
+            <div class="card-body">
+              <h2 class="card-title justify-center">Parallelogram</h2>
+              <p class="justify-center">Area(A) = b*h</p>
+              <p class="justify-center">b=10cm, h=12cm</p>
+              
 
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure><img class="mt-10" src="images/rhombus.png" alt="rhombus" /></figure>
+            <div class="card-body">
+              <h2 class="card-title justify-center">rhombus</h2>
+              <p class="justify-center">Area(A) = 0.5*d<sub>1</sub>*d<sub>2</sub></p>
+              <p>d<sub>1</sub>=16cm, d<sub>2</sub>=8cm</p>
+              
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure><img class="mt-10" src="images/pentagon.png" alt="pentagon" /></figure>
+            <div class="card-body">
+              <h2 class="card-title justify-center">pentagon</h2>
+              <p class="justify-center">Area(A) = 0.5*p*b</p>
+              <p>p=6cm, b=10cm</p>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure><img class="mt-10" src="images/ellipse.png" alt="ellipse" /></figure>
+            <div class="card-body">
+              <h2 class="card-title justify-center">ellipse</h2>
+              <p class="justify-center">Area(A) = &#x213C ab</p>
+              <p>a=10cm, b=4cm</p>
+              
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary">Calculate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-details w-[25%] mx-auto">
+          <h2 class="text-3xl text-center font-bold underline mt-5">Area calculation</h2>
+          <div class="overflow-x-auto">
+            <table class="table w-full">
+              <!-- head -->
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Name</th>
+                  <th>value</th>
+                  <th><button>Convert to m<sup>2</sup></button></th>
+                </tr>
+              </thead>
+              
+            </table>
+          </div>
         </div>
       </section>
     </main>
