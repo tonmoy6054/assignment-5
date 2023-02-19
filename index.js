@@ -176,22 +176,25 @@ const eleventhInput = document.getElementById("11th-input").value;
 const twelvethInput = document.getElementById("12th-input").value;
 // console.log(fourthInput);
 const total = 3.14*eleventhInput*twelvethInput;
-console.log(total.toFixed(2));
-   const conversion = total / 10000;
-   console.log(sixthHeading,eleventhInput,twelvethInput,total,conversion);
+const final = total.toFixed(2);
+console.log(final);
+// console.log(total.toFixed(2));
+   const conversion = final / 10000;
+   const conversionF = conversion.toFixed(2);
+   console.log(sixthHeading,eleventhInput,twelvethInput,final,conversionF);
 // function call
-displayData(sixthHeading,eleventhInput,twelvethInput,total,conversion);
+displayData(sixthHeading,eleventhInput,twelvethInput,final,conversionF);
 });
 
-function displayData(sixthHeading,eleventhInput,twelvethInput,total,conversion){
+function displayData(sixthHeading,eleventhInput,twelvethInput,final,conversionF){
     
   const container = document.getElementById("table-6-container");
 const tr = document.createElement("tr");
 tr.innerHTML=`
 <td>${6}</td>
 <td>${sixthHeading}</td>
-<td>${total}</td>
-<td>${conversion}</td>
+<td>${final}</td>
+<td>${conversionF}</td>
 `;
 container.appendChild(tr);
 }
