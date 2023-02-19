@@ -7,8 +7,10 @@
     <title><Assignment-5></Assignment-5></title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
+  
     <header>
         <!-- navbar start-->
         <div class="navbar bg-blue-100 lg-px-12">
@@ -36,23 +38,24 @@
           <!-- navbar end -->
     </header>
     <main>
-      <section class="lg-px-12 flex flex-col md:flex-row lg:flex-row">
-        <div class="geomatric-details w-[70%] mt-5 grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+      <section class="main-section flex flex-col md:flex-row lg:flex-row">
+        <div class="geomatric-details w-[60%] mt-5 ml-5 grid md:grid-cols-2 lg:grid-cols-2 gap-4">
           <div class="card card-compact w-96 bg-base-100 shadow-xl">
             <figure><img class="" src="images/triangle.png" alt="triangle" /></figure>
             <div class="card-body">
-              <h2 class="card-title justify-center">Triangle</h2>
+              <h2 class="card-title justify-center" id="1st-card-heading">Triangle</h2>
+              
               <p class="justify-center">Area(A) = 0.5*b*h</p>
   
               
 <!-- xs -->
-<input type="text" placeholder="b" class="input input-bordered input-xs w-12 max-w-xs" />
+<input type="text" id="1st-input" placeholder="b" class="input input-bordered input-xs w-12 max-w-xs" />
 <p>cm</p>
 <!-- sm -->
-<input type="text" placeholder="h" class="input input-bordered input-sm w-12 max-w-xs" />
+<input type="text" id="2nd-input" placeholder="h" class="input input-bordered input-sm w-12 max-w-xs" />
 <p class="">cm</p>
 <div class="card-actions justify-center">
-  <button class="btn btn-primary">Calculate</button>
+  <button class="btn btn-primary" id="1st-card-calculation" id="calculate-1">Calculate</button>
 </div>
 </div>
 </div>
@@ -61,32 +64,38 @@
           <div class="card card-compact w-96 bg-base-100 shadow-xl">
             <figure><img class="mt-10" src="images/rectangle.png" alt="rectangle" /></figure>
             <div class="card-body">
-              <h2 class="card-title justify-center">Rectangle</h2>
+              <h2 class="card-title justify-center" id="2nd-card-heading">Rectangle</h2>
               <p class="justify-center">Area(A) = w*l</p>
               
 <!-- xs -->
-<input type="text" placeholder="w" class="input input-bordered input-xs w-12 max-w-xs" />
+<input type="text" placeholder="w" class="input input-bordered input-xs w-12 max-w-xs" id="3rd-input" />
 <p>cm</p>
 <!-- sm -->
-<input type="text" placeholder="l" class="input input-bordered input-sm w-12 max-w-xs" />
+<input type="text" placeholder="l" class="input input-bordered input-sm w-12 max-w-xs" id="4th-input" />
 <p class="">cm</p>
 <!-- md -->
 
               <div class="card-actions justify-center">
-                <button class="btn btn-primary">Calculate</button>
+                <button class="btn btn-primary" id="2nd-card-calculation">Calculate</button>
               </div>
             </div>
           </div>
+          <!-- 3rd card -->
+
           <div class="card card-compact w-96 bg-base-100 shadow-xl">
             <figure><img class="mt-10" src="images/parallelogram.png" alt="rectangle" /></figure>
             <div class="card-body">
-              <h2 class="card-title justify-center">Parallelogram</h2>
-              <p class="justify-center">Area(A) = b*h</p>
-              <p class="justify-center">b=10cm, h=12cm</p>
-              
-
+              <h2 class="card-title justify-center" id="3rd-card-heading">Parallelogram</h2>
+              <p class="justify-center"  id="area-low-3">Area(A) = h*b</p>
+              <p class="justify-center" id="value-3">b=10cm, h=12cm</p>
+          <!-- xs -->
+<input type="text" placeholder="b" class="input input-bordered input-xs w-12 max-w-xs" id="5th-input" />
+<p>cm</p>
+<!-- sm -->
+<input type="text" placeholder="h" class="input input-bordered input-sm w-12 max-w-xs" id="6th-input" />
+<p class="">cm</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary">Calculate</button>
+                <button class="btn btn-primary" id="3rd-card-calculation">Calculate</button>
               </div>
             </div>
           </div>
@@ -104,18 +113,18 @@
           </div>
           <div class="card card-compact w-96 bg-base-100 shadow-xl">
             <figure><img class="mt-10" src="images/pentagon.png" alt="pentagon" /></figure>
-            <div class="card-body">
-              <h2 class="card-title justify-center">pentagon</h2>
+            <div class="cart-body">
+              <h2 class="cart-title justify-center">pentagon</h2>
               <p class="justify-center">Area(A) = 0.5*p*b</p>
               <p>p=6cm, b=10cm</p>
-              <div class="card-actions justify-center">
+              <div class="cart-actions justify-center">
                 <button class="btn btn-primary">Calculate</button>
               </div>
             </div>
           </div>
-          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+          <div class="cart cart-compact w-96 bg-base-100 shadow-xl">
             <figure><img class="mt-10" src="images/ellipse.png" alt="ellipse" /></figure>
-            <div class="card-body">
+            <div class="cart-body">
               <h2 class="card-title justify-center">ellipse</h2>
               <p class="justify-center">Area(A) = &#x213C ab</p>
               <p>a=10cm, b=4cm</p>
@@ -126,9 +135,10 @@
             </div>
           </div>
         </div>
-        <div class="card-details w-[25%] mx-auto">
-          <h2 class="text-3xl text-center font-bold underline mt-5">Area calculation</h2>
+        <div class="cart-details w-full md:w-[30%] lg:w-[27%] mx-auto">
+          <h2 class="text-3xl text-center font-bold underline mt-5">Area Calculation</h2>
           <div class="overflow-x-auto">
+      
             <table class="table w-full">
               <!-- head -->
               <thead>
@@ -136,12 +146,17 @@
                   <th>No.</th>
                   <th>Name</th>
                   <th>value</th>
-                  <th><button>Convert to m<sup>2</sup></button></th>
+                  <th><button class="btn btn-secondary">Convert to m<sup>2</sup></button></th>
                 </tr>
               </thead>
+              <tbody id="table-1-container">
+              <tbody id="table-2-container">
+                </tbody>
+
+              </tbody>
               
             </table>
-          </div>
+          </div> 
         </div>
       </section>
     </main>
