@@ -39,7 +39,7 @@
     </header>
     <main>
       <section class="main-section flex flex-col md:flex-row lg:flex-row">
-        <div class="geomatric-details w-[60%] mt-5 ml-5 grid md:grid-cols-2 lg:grid-cols-2 gap-4">
+        <div class="geomatric-details w-[60%] mt-5 ml-5 grid md:grid-cols-2 lg:grid-cols-2 gap-6">
           <div class="card card-compact w-96 bg-base-100 shadow-xl">
             <figure><img class="" src="images/triangle.png" alt="triangle" /></figure>
             <div class="card-body">
@@ -100,34 +100,47 @@
             </div>
           </div>
           <div class="card card-compact w-96 bg-base-100 shadow-xl">
-            <figure><img class="mt-10" src="images/rhombus.png" alt="rhombus" /></figure>
+            <figure><img class="mt-10" src="images/rhombus.png" alt="rhombus"/></figure>
             <div class="card-body">
-              <h2 class="card-title justify-center">rhombus</h2>
+              <h2 class="card-title justify-center" id=" 4th-card-heading">rhombus</h2>
               <p class="justify-center">Area(A) = 0.5*d<sub>1</sub>*d<sub>2</sub></p>
               <p>d<sub>1</sub>=16cm, d<sub>2</sub>=8cm</p>
+              <input type="text" placeholder="" class="input input-bordered input-xs w-12 max-w-xs" id="7th-input" />
+<p>cm</p>
+<!-- sm -->
+<input type="text" placeholder="" class="input input-bordered input-sm w-12 max-w-xs" id="8th-input" />
               
               <div class="card-actions justify-center">
-                <button class="btn btn-primary">Calculate</button>
+                <button class="btn btn-primary" id="4th-card-calculation">Calculate</button>
               </div>
             </div>
           </div>
           <div class="card card-compact w-96 bg-base-100 shadow-xl">
             <figure><img class="mt-10" src="images/pentagon.png" alt="pentagon" /></figure>
             <div class="cart-body">
-              <h2 class="cart-title justify-center">pentagon</h2>
+              <h2 class="cart-title justify-center" id="5th-card-heading">pentagon</h2>
               <p class="justify-center">Area(A) = 0.5*p*b</p>
               <p>p=6cm, b=10cm</p>
+              <input type="text" placeholder="" class="input input-bordered input-xs w-12 max-w-xs" id="9th-input" />
+              <p>cm</p>
+              <!-- sm -->
+              <input type="text" placeholder="" class="input input-bordered input-sm w-12 max-w-xs" id="10th-input" />
               <div class="cart-actions justify-center">
-                <button class="btn btn-primary">Calculate</button>
+                <button class="btn btn-primary" id="5th-card-calculation">Calculate</button>
               </div>
             </div>
           </div>
-          <div class="cart cart-compact w-96 bg-base-100 shadow-xl">
+          <div class="card card-compact w-96 bg-base-100 shadow-xl"">
             <figure><img class="mt-10" src="images/ellipse.png" alt="ellipse" /></figure>
             <div class="cart-body">
               <h2 class="card-title justify-center">ellipse</h2>
               <p class="justify-center">Area(A) = &#x213C ab</p>
               <p>a=10cm, b=4cm</p>
+              <input type="text" placeholder="" class="input input-bordered input-xs w-12 max-w-xs" id="7th-input" />
+              <p>cm</p>
+              <!-- sm -->
+              <input type="text" placeholder="" class="input input-bordered input-sm w-12 max-w-xs" id="8th-input" />
+
               
               <div class="card-actions justify-center">
                 <button class="btn btn-primary">Calculate</button>
@@ -151,9 +164,18 @@
               </thead>
               <tbody id="table-1-container">
               <tbody id="table-2-container">
+              <tbody id="table-3-container">
+              <tbody id="table-4-container">
+              <tbody id="table-5-container">
+              <tbody id="table-6-container">
                 </tbody>
-
+                </tbody>
               </tbody>
+            </tbody>
+            </tbody>
+
+          </tbody>
+              
               
             </table>
           </div> 

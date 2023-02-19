@@ -88,16 +88,16 @@ container.appendChild(tr);
 // 3rd card
 
 document.getElementById("3rd-card-calculation").addEventListener("click",function(){
-  const secondHeading = document.getElementById("3rd-card-heading").innerText;
+  const thirdHeading = document.getElementById("3rd-card-heading").innerText;
 const fifthInput = document.getElementById("5th-input").value;
 const sixthInput = document.getElementById("6th-input").value;
 // console.log(fourthInput);
 const total = fifthInput*sixthInput;
 // console.log(total);
    const conversion = total / 10000;
-   console.log(secondHeading,thirdInput,fourthInput,total,conversion);
+   console.log(thirdHeading,fifthInput,sixthInput,total,conversion);
 // function call
-displayData(secondHeading,thirdInput,fourthInput,total,conversion);
+displayData(thirdHeading,fifthInput,sixthInput,total,conversion);
 });
 
 function displayData(thirdHeading,fifthInput,sixthInput,total,conversion){
@@ -107,6 +107,61 @@ const tr = document.createElement("tr");
 tr.innerHTML=`
 <td>${3}</td>
 <td>${thirdHeading}</td>
+<td>${total}</td>
+<td>${conversion}</td>
+`;
+container.appendChild(tr);
+}
+
+// 4th card
+
+document.getElementById("4th-card-calculation").addEventListener("click",function(){
+  const fourthHeading = document.getElementById("4th-card-heading").innerText;
+const seventhInput = document.getElementById("7th-input").value;
+const eighthInput = document.getElementById("8th-input").value;
+// console.log(fourthInput);
+const total = 0.5*seventhInput*eighthInput;
+console.log(total);
+   const conversion = total / 10000;
+   console.log(fourthHeading,seventhInput,eighthInput,total,conversion);
+// function call
+displayData(fourthHeading,seventhInput,eighthInput,total,conversion);
+});
+
+function displayData(fourthHeading,seventhInput,eighthInput,total,conversion){
+    
+  const container = document.getElementById("table-4-container");
+const tr = document.createElement("tr");
+tr.innerHTML=`
+<td>${4}</td>
+<td>${fourthHeading}</td>
+<td>${total}</td>
+<td>${conversion}</td>
+`;
+container.appendChild(tr);
+}
+//  5th card
+
+document.getElementById("5th-card-calculation").addEventListener("click",function(){
+  const fifthHeading = document.getElementById("5th-card-heading").innerText;
+const ninthInput = document.getElementById("9th-input").value;
+const tenthInput = document.getElementById("10th-input").value;
+// console.log(fourthInput);
+const total = 0.5*ninthInput*tenthInput;
+console.log(total);
+   const conversion = total / 10000;
+   console.log(fifthHeading,ninthInput,tenthInput,total,conversion);
+// function call
+displayData(fifthHeading,ninthInput,tenthInput,total,conversion);
+});
+
+function displayData(fifthHeading,ninthInput,tenthInput,total,conversion){
+    
+  const container = document.getElementById("table-5-container");
+const tr = document.createElement("tr");
+tr.innerHTML=`
+<td>${5}</td>
+<td>${fifthHeading}</td>
 <td>${total}</td>
 <td>${conversion}</td>
 `;
